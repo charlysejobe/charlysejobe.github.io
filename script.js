@@ -1,9 +1,8 @@
 /* =====================================================
    CHARLYSE JOBE — PORTFOLIO
-   JavaScript — same features, toned down particles
    ===================================================== */
 
-document.addEventListener('DOMContentLoaded', () => {
+   document.addEventListener('DOMContentLoaded', () => {
 
     // =====================================================
     // 1. Particle Background (subtle)
@@ -85,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Typing Animation
     // =====================================================
     const typedElement = document.getElementById('typed-text');
-    const words = [' Engineer', ' Analyst', ' Specialist'];
+    const words = 'in Cybersecurity'
     let wordIndex = 0, charIndex = 0, isDeleting = false, speed = 100;
 
     function typeEffect() {
