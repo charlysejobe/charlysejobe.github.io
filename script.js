@@ -1,5 +1,6 @@
 /* =====================================================
    CHARLYSE JOBE — PORTFOLIO
+   JavaScript — same features, toned down particles
    ===================================================== */
 
    document.addEventListener('DOMContentLoaded', () => {
