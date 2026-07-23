@@ -299,10 +299,6 @@ img { max-width: 100%; display: block; }
 .hero-title-static { color: var(--text-primary); }
 .hero-title-dynamic { color: var(--accent); }
 
-.cursor {
-    color: var(--accent);
-    animation: blink 0.8s step-end infinite;
-}
 
 @keyframes blink { 50% { opacity: 0; } }
 
