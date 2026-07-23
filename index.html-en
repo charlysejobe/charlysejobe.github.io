@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlyse Jobe — Cybersecurity Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Charlyse Jobe, cybersecurity engineering student at EURECOM. Specialized in malware analysis, reverse engineering, and GRC. Looking for a 6-month internship starting February 2027.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#hero" class="nav-logo" style="color: inherit; text-decoration: none;">
+            <span class="logo-bracket">&lt;</span>CJ<span class="logo-slash"> /</span><span class="logo-bracket">&gt;</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="index.html" class="nav-link"><i class="fas fa-language"></i> FR</a></li>
+        </ul>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+            <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+            <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+            <li><a href="#education" class="mobile-nav-link">Education</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            <li><a href="index.html" class="mobile-nav-link"><i class="fas fa-language"></i> FR</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Looking for an internship — Feb 2027</span>
+            </div>
+            <h1 class="hero-name">
+                <span class="hero-greeting">Hello, I am</span>
+                <span class="hero-name-text">Charlyse Jobe</span>
+            </h1>
+            <div class="hero-title">
+                <span class="hero-title-static">Cybersecurity Engineering Student</span>
+                <span class="hero-title-dynamic" id="typed-text"></span>
+            </div>
+            <p class="hero-description">
+                I am a final-year engineering student at <strong>EURECOM</strong>. I am passionate about protecting digital systems, analyzing threats, and building secure architectures.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-shield-halved"></i>
+                    View My Projects
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-paper-plane"></i>
+                    Contact Me
+                </a>
+                <a href="./CV_Charlyse_JOBE_Portfolio_EN.pdf" target="_blank" class="btn btn-outline" download>
+                    <i class="fas fa-download"></i>
+                    Download my Resume
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"><div class="wheel"></div></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-user-shield"></i> About Me</span>
+                <h2 class="section-title">Combining Security & Innovation</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <!-- Photo -->
+                    <img src="./ckjeurecom.jpg" alt="Charlyse Jobe" class="about-photo">
+                    
+                    <p class="about-intro">
+                        I am a <strong>Cybersecurity Engineering student</strong> at EURECOM (Sophia Antipolis). It is a highly ranked, internationally focused engineering school. I am looking for a <strong>6-month internship starting in February 2027</strong>.
+                    </p>
+                    <p>
+                        I attended intensive prep classes (MP2I/MPI) at Janson de Sailly. Then, I majored in cybersecurity at EURECOM. This path gave me strong skills in theoretical computer science and applied security.
+                    </p>
+                    <p>
+                        My goal is to <strong>actively protect your systems and solve complex technical challenges</strong>.
+                    </p>
+
+                    <!-- International Mindset -->
+                    <div class="why-korea" data-reveal>
+                        <h3><span class="flag-icon">🌍</span> Global Mindset & Adaptability</h3>
+                        <p>
+                            I am currently on an exchange semester at Yonsei University in South Korea. This allows me to experience a top-tier tech ecosystem. I am used to international environments and speak several languages. I adapt quickly to new situations. I am ready to bring my open mind and technical skills to your team.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span class="terminal-title">charlyse@portfolio:~</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p><span class="prompt">$</span> cat profile.json</p>
+                            <pre><code>{
+  "name": "Charlyse Jobe",
+  "role": "Cybersecurity Engineer",
+  "school": "EURECOM",
+  "exchange": "Yonsei University 🇰🇷",
+  "location": "Caen, France 🇫🇷",
+  "goal": "Internship — Feb 2027",
+  "duration": "6 months",
+  "languages": [
+    "French 🇫🇷 (Native)",
+    "English 🇬🇧 (Fluent)",
+    "Spanish 🇪🇸 (Intermediate)",
+    "Korean 🇰🇷 (Beginner A2)"
+  ],
+  "interests": [
+    "Malware Analysis",
+    "Pentesting",
+    "Reverse Engineering",
+    "GRC & Compliance",
+    "Network Security"
+  ]
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section-alt" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-code"></i> Projects & Experience</span>
+                <h2 class="section-title">My IT Experience</h2>
+                <p class="section-subtitle">A selection of academic and professional projects showing my skills in cybersecurity and software development.</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Projet Malware -->
+                <div class="project-card featured" data-reveal data-modal="modal-malware" style="cursor:pointer">
+                    <div class="project-icon"><i class="fas fa-virus"></i></div>
+                    <div class="project-badge">Featured</div>
+                    <div class="project-date"><i class="far fa-calendar"></i> Jan 2026 — Jun 2026</div>
+                    <h3 class="project-title">Windows Malware Classification via Graph Analysis (CFG)</h3>
+                    <p class="project-description">
+                        Classified <strong>3,850 Windows malware samples</strong> using static analysis of Control Flow Graphs (CFG). Used Graph Neural Networks to bypass code obfuscation techniques.
+                    </p>
+                    <div class="project-details">
+                        <div class="detail-item"><i class="fa-solid fa-atom"></i><span>Research project</span></div>
+                        <div class="detail-item"><i class="fas fa-bullseye"></i><span>Built an obfuscation-resistant pipeline</span></div>
+                        <div class="detail-item"><i class="fas fa-brain"></i><span>Implemented a GIN (Graph Isomorphism Network)</span></div>
+                        <div class="detail-item"><i class="fas fa-tachometer-alt"></i><span>Optimized with Python multiprocessing</span></div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag tag-cyber">Python</span>
+                        <span class="tag tag-cyber">PyTorch Geometric</span>
+                        <span class="tag tag-cyber">angr</span>
+                        <span class="tag tag-cyber">Reverse Engineering</span>
+                        <span class="tag tag-cyber">GNN</span>
+                    </div>
+                </div>
+
+                <!-- Projet SwipeFund -->
+                <div class="project-card" data-reveal data-modal="modal-swipefund" style="cursor:pointer">
+                    <div class="project-icon"><i class="fas fa-globe"></i></div>
+                    <div class="project-date"><i class="far fa-calendar"></i> Mar 2026 — Jun 2026</div>
+                    <h3 class="project-title">SwipeFund — Web App Platform</h3>
+                    <p class="project-description">
+                        Developed a full web app from scratch in a 4-person team. We used vanilla technologies. I built the search engine, the user interfaces, and the technical documentation.
+                    </p>
+                    <div class="project-details">
+                        <div class="detail-item"><i class="fas fa-search"></i><span>Dynamic search with tags and filters</span></div>
+                        <div class="detail-item"><i class="fas fa-universal-access"></i><span>WCAG Accessibility & W3C validation</span></div>
+                        <div class="detail-item"><i class="fas fa-map"></i><span>Leaflet API for interactive maps</span></div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag tag-dev">HTML5/CSS3</span>
+                        <span class="tag tag-dev">Vanilla JS</span>
+                        <span class="tag tag-dev">REST API</span>
+                        <span class="tag tag-dev">LocalStorage</span>
+                        <span class="tag tag-dev">GitLab</span>
+                    </div>
+                    <a href="https://github.com/charlysejobe/swipe-fund-web-app" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+                </div>
+
+                <!-- Projet IoT -->
+                <div class="project-card" data-reveal data-modal="modal-iot" style="cursor:pointer">
+                    <div class="project-icon"><i class="fas fa-microchip"></i></div>
+                    <div class="project-date"><i class="far fa-calendar"></i> Sep 2024 — Jan 2025</div>
+                    <h3 class="project-title">IoT & Accessibility Semester Project</h3>
+                    <p class="project-description">
+                        Designed and built an assistive device for visually impaired people. Processed real-time hardware data. Added haptic and audio feedback for better spatial awareness.
+                    </p>
+                    <div class="project-details">
+                        <div class="detail-item"><i class="fas fa-hand-sparkles"></i><span>Real-time haptic and audio feedback</span></div>
+                        <div class="detail-item"><i class="fas fa-camera"></i><span>Environment analysis via Raspberry Pi camera</span></div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag tag-iot">Python</span>
+                        <span class="tag tag-iot">Raspberry Pi 4</span>
+                        <span class="tag tag-iot">Embedded Systems</span>
+                        <span class="tag tag-iot">Camera</span>
+                        <span class="tag tag-iot">Haptic Sensors</span>
+                    </div>
+                </div>
+
+                <!-- Projet EGM -->
+                <div class="project-card" data-reveal data-modal="modal-egm" style="cursor:pointer">
+                    <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="project-badge badge-work">Internship</div>
+                    <div class="project-date"><i class="far fa-calendar"></i> Jun 2025 — Jul 2025</div>
+                    <h3 class="project-title">Data Processing & Automation — EGM</h3>
+                    <p class="project-description">
+                        Internship at EGM, a sustainable tech company. Created an automated Python pipeline. It analyzes sensor data (eNose, Pixelo) using Pandas and Matplotlib. I also did lab measurements.
+                    </p>
+                    <div class="project-details">
+                        <div class="detail-item"><i class="fas fa-robot"></i><span>Modular data pipeline with Pandas & Matplotlib</span></div>
+                        <div class="detail-item"><i class="fas fa-flask"></i><span>Practical lab measurements on sensors</span></div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag tag-data">Python</span>
+                        <span class="tag tag-data">Pandas</span>
+                        <span class="tag tag-data">Matplotlib</span>
+                        <span class="tag tag-data">IoT Sensors</span>
+                    </div>
+                    <a href="https://github.com/charlysejobe/egm_internship" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-tools"></i> Technical & Soft Skills</span>
+                <h2 class="section-title">My Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-reveal>
+                    <div class="skill-category-icon"><i class="fas fa-shield-virus"></i></div>
+                    <h3>Cybersecurity & Cryptography</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Reverse Engineering</span>
+                            <div class="skill-tools">Ghidra, angr, x64dbg</div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Web & OS Security</span>
+                            <div class="skill-tools">CTF Challenges, Vulnerability Analysis</div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Cryptographic Protocols</span>
+                            <div class="skill-tools">PKI, Kerberos</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" data-reveal>
+                    <div class="skill-category-icon"><i class="fas fa-terminal"></i></div>
+                    <h3>Programming & Scripting</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Proficient</span>
+                            <div class="skill-tools">Python, C, Bash, SQL</div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Basics</span>
+                            <div class="skill-tools">OCaml, JavaScript</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" data-reveal>
+                    <div class="skill-category-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Systems & Networks</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Operating Systems</span>
+                            <div class="skill-tools">Linux, System Hardening</div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Networks</span>
+                            <div class="skill-tools">TCP/IP, DNS, Routing, Wireshark</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category" data-reveal>
+                    <div class="skill-category-icon"><i class="fas fa-scale-balanced"></i></div>
+                    <h3>Governance, Risk & Compliance (GRC)</h3>
+                     <span class="skill-tools">GDPR Compliance, Privacy Risk Analysis, Legal aspects of security, Cloud and Big Data Security</span>
+                </div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-reveal>
+                    <div class="skill-category-icon"><i class="fas fa-rocket"></i></div>
+                    <h3>Proactivity</h3>
+                </div>
+                <div class="skill-category" data-reveal>
+                    <div class="skill-category-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Team Spirit</h3>
+                </div>
+                <div class="skill-category" data-reveal>
+                    <div class="skill-category-icon"><i class="fas fa-compass"></i></div>
+                    <h3>Autonomy</h3>
+                </div>
+                <div class="skill-category" data-reveal>
+                    <div class="skill-category-icon"><i class="fas fa-magnifying-glass"></i></div>
+                    <h3>Analytical Mind & Technical Curiosity</h3>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="certs-section" data-reveal>
+                <h3 class="subsection-title"><i class="fas fa-certificate"></i> Certifications</h3>
+                <div class="cert-list">
+                    <div class="cert-item">
+                        <div class="cert-status obtained">Obtained</div>
+                        <div>
+                            <strong>Handimanagement Label</strong>
+                            <span>Companieros — 2025</span>
+                        </div>
+                    </div> 
+                    <div class="cert-item">
+                        <div class="cert-status obtained">Obtained</div>
+                        <div>
+                            <strong>TOEIC (900/990)</strong>
+                            <span>2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Languages Spoken -->
+            <div class="languages-section">
+                <h3 class="languages-title"><i class="fas fa-language"></i> Languages</h3>
+                <div class="languages-grid">
+                    <div class="language-card" data-reveal>
+                        <span class="language-flag">🇫🇷</span>
+                        <span class="language-name">French</span>
+                        <span class="language-level">Native</span>
+                        <div class="language-bar"><div class="language-fill" style="--fill-width: 100%"></div></div>
+                    </div>
+                    <div class="language-card" data-reveal>
+                        <span class="language-flag">🇬🇧</span>
+                        <span class="language-name">English</span>
+                        <span class="language-level">Fluent</span>
+                        <div class="language-bar"><div class="language-fill" style="--fill-width: 90%"></div></div>
+                    </div>
+                    <div class="language-card" data-reveal>
+                        <span class="language-flag">🇪🇸</span>
+                        <span class="language-name">Spanish</span>
+                        <span class="language-level">Intermediate (B1)</span>
+                        <div class="language-bar"><div class="language-fill" style="--fill-width: 50%"></div></div>
+                    </div>
+                    <div class="language-card" data-reveal>
+                        <span class="language-flag">🇰🇷</span>
+                        <span class="language-name">Korean</span>
+                        <span class="language-level">Beginner (A2)</span>
+                        <div class="language-bar"><div class="language-fill" style="--fill-width: 30%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section section-alt" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-graduation-cap"></i> Education & Activities</span>
+                <h2 class="section-title">Academic Path</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Aug 2026 — Dec 2026</div>
+                        <h3>Exchange Semester — Yonsei University</h3>
+                        <h4>Seoul, South Korea 🇰🇷</h4>
+                        <p>Exchange semester at a top South Korean university (SKY). Studying computer science and AI. Immersing myself in Korean culture and language.</p>
+                        <div class="timeline-tags">
+                            <span class="tag tag-edu">Exchange</span>
+                            <span class="tag tag-edu">South Korea</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Sep 2024 — Present</div>
+                        <h3>Engineering Degree in Computer Science</h3>
+                        <h4>EURECOM — Sophia Antipolis, France</h4>
+                        <p>Majoring in <strong>Cybersecurity</strong>. Admitted through the highly competitive IMT national exam for French engineering schools.</p>
+                        <div class="timeline-tags">
+                            <span class="tag tag-edu">Cybersecurity</span>
+                            <span class="tag tag-edu">CTI Accredited</span>
+                            <span class="tag tag-edu">IMT Network</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Sep 2022 — Jul 2024</div>
+                        <h3>Preparatory Classes (CPGE) — MP2I / MPI</h3>
+                        <h4>Lycée Janson de Sailly — Paris, France</h4>
+                        <p>Intensive 2-year program in Math, Physics, and Computer Science. One of the most selective prep programs in France. Focused on complex problem-solving, C and OCaml coding, and theoretical computer science.</p>
+                        <div class="timeline-tags">
+                            <span class="tag tag-edu">Mathematics</span>
+                            <span class="tag tag-edu">Computer Science</span>
+                            <span class="tag tag-edu">Competitive Exams</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-reveal>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022</div>
+                        <h3>High School Diploma — Highest Honors</h3>
+                        <h4>France</h4>
+                        <p>Majors: Math, Physics, Computer Science (NSI), and Advanced Math. Graduated with <strong>Highest Honors</strong> and the <strong>Jury's Congratulations</strong>.</p>
+                        <div class="timeline-tags">
+                            <span class="tag tag-edu">Highest Honors</span>
+                            <span class="tag tag-edu">Jury's Congratulations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="extra-section">
+                <h3 class="extra-title"><i class="fas fa-star"></i> Beyond IT</h3>
+                <div class="extra-grid">
+                    <div class="extra-card" data-reveal>
+                        <div class="extra-icon"><i class="fas fa-handshake-angle"></i></div>
+                        <h4>Event Hostess at Canneseries & Cannes Film Festival</h4>
+                        <span class="extra-date">2026</span>
+                    </div>
+                    <div class="extra-card" data-reveal>
+                        <div class="extra-icon"><i class="fas fa-bullhorn"></i></div>
+                        <h4>Head of Communication — EURECOM Student Union (BDE)</h4>
+                        <p>Managed internal and external communication. Organized student events. Created the introductory brochure. Promoted student engagement.</p>
+                        <span class="extra-date">Nov 2024 — Dec 2025</span>
+                    </div>
+                    <div class="extra-card" data-reveal>
+                        <div class="extra-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <h4>Youth Leader</h4>
+                        <p>Certified camp counselor (BAFA).</p>
+                        <span class="extra-date">2020 — Present</span>
+                    </div>
+                    <div class="extra-card" data-reveal>
+                        <div class="extra-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <h4>Private Math & Science Tutor</h4>
+                        <p>Tutored elementary to high school students. Helped them build strong basics, develop scientific rigor, and gain confidence.</p>
+                        <span class="extra-date">2024 — Present</span>
+                    </div>
+                    <div class="extra-card" data-reveal>
+                        <div class="extra-icon"><i class="fas fa-basketball"></i></div>
+                        <h4>President of the Women's Basketball Club at EURECOM</h4>
+                        <span class="extra-date">2024 — 2026</span>
+                    </div>
+                    <div class="extra-card" data-reveal>
+                        <div class="extra-icon"><i class="fas fa-basketball"></i></div>
+                        <h4>High-Level Athlete — Basketball</h4>
+                        <p>Former member of the Normandy Elite team. Partner of the USO Mondeville training center (sports-study program).</p>
+                        <span class="extra-date">2019 — 2022</span>
+                    </div>
+                    <div class="extra-card" data-reveal>
+                        <div class="extra-icon"><i class="fas fa-microphone-lines"></i></div>
+                        <h4>Music</h4>
+                    <p>Singing & Cello</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-envelope"></i> Contact</span>
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-subtitle">
+                    I am actively looking for a <strong>6-month cybersecurity internship</strong> starting in <strong>February 2027</strong>.
+                    I am open to opportunities in France and abroad. Feel free to contact me to discuss!</p>
+            </div>
+            <div class="contact-grid">
+                <a href="mailto:charlyse.jobe@gmail.com" class="contact-card" data-reveal>
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <p>charlyse.jobe@gmail.com</p>
+                </a>
+                <a href="https://linkedin.com/in/charlyse-jobe" target="_blank" rel="noopener" class="contact-card" data-reveal>
+                    <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/charlyse-jobe</p>
+                </a>
+                <a href="https://github.com/charlysejobe" target="_blank" rel="noopener" class="contact-card" data-reveal>
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                    <h3>GitHub</h3>
+                    <p>github.com/charlysejobe</p>
+                </a>
+                <div class="contact-card" data-reveal>
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Location</h3>
+                    <p>Caen, France 🇫🇷</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>CJ<span class="logo-slash"> /</span><span class="logo-bracket">&gt;</span>
+                </div>
+                <p> Portfolio of Charlyse Jobe — 2026</p>
+                <div class="footer-links">
+                    <a href="mailto:charlyse.jobe@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/charlyse-jobe" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/charlysejobe" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Detail Modals -->
+    <div class="modal-overlay" id="modal-overlay"></div>
+
+    <!-- Modal: Malware Classification -->
+    <div class="project-modal" id="modal-malware">
+        <button class="modal-close" aria-label="Close"><i class="fas fa-xmark"></i></button>
+        <div class="modal-banner">
+            <img src="./img-malware.jpg" alt="Malware classification pipeline diagram">
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Semester Project — Cybersecurity & AI</span>
+            <h2>Windows Malware Classification via Graph Analysis (CFG)</h2>
+            <div class="modal-meta">
+                <span><i class="far fa-calendar"></i> Jan 2026 — Jun 2026</span>
+                <span><i class="fas fa-school"></i> EURECOM</span>
+            </div>
+
+            <div class="modal-section">
+                <h3>Context & Challenge</h3>
+                <p>Traditional malware detection uses signature-based methods. These are easily bypassed via code obfuscation. This project aimed to build an <strong>obfuscation-resistant classification method</strong>. We analyzed structural properties of malicious binaries instead of raw content.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>Approach</h3>
+                <ol>
+                    <li><strong>Binary Analysis:</strong> Extracted Control Flow Graphs (CFG) from 3,850 Windows PE malware samples using the <em>angr</em> framework.</li>
+                    <li><strong>Graph Representation:</strong> Converted each CFG into a Machine Learning data structure. We preserved structural relations between code blocks.</li>
+                    <li><strong>GNN Classification:</strong> Trained a Graph Isomorphism Network (GIN) using PyTorch Geometric. We classified malware families using only their control graph structure.</li>
+                    <li><strong>Optimization:</strong> Used Python multiprocessing to speed up the binary analysis step.</li>
+                </ol>
+            </div>
+
+            <div class="modal-section">
+                <h3>Key Results</h3>
+                <ul>
+                    <li><strong>Data Processing:</strong> Extracted 3,850 static CFGs across <strong>235 malware families</strong>.</li>
+                    <li><strong>Model Architecture:</strong> Designed a 2-layer GIN with Batch Normalization and Global Mean Pooling. It handles massive graphs without gradient explosion.</li>
+                    <li><strong>Performance:</strong> Reached <strong>40.39%</strong> test accuracy on a highly complex 235-class task. Training loss successfully dropped from 5.32 to 3.15.</li>
+                    <li><strong>Resilience:</strong> Proved that the GIN model preserves structural density well. It captures obfuscated malware structures better than standard GCNs.</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>Technologies</h3>
+                <div class="modal-tech">
+                    <span>Python</span><span>PyTorch Geometric</span><span>angr</span><span>Reverse Engineering</span><span>GNN / GIN</span><span>Multiprocessing</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: SwipeFund -->
+    <div class="project-modal" id="modal-swipefund">
+        <button class="modal-close" aria-label="Close"><i class="fas fa-xmark"></i></button>
+        <div class="modal-banner">
+            <img src="./img-swipefund.png" alt="SwipeFund Web App Homepage">
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Web Architecture Project</span>
+            <h2>SwipeFund — Web App Platform</h2>
+            <div class="modal-meta">
+                <span><i class="far fa-calendar"></i> Mar 2026 — Jun 2026</span>
+                <span><i class="fas fa-school"></i> EURECOM</span>
+                <a href="https://charlysejobe.github.io/swipe-fund-web-app/" target="_blank" rel="noopener" style="color:var(--accent)"><i class="fas fa-globe"></i> Live Demo</a>
+                <a href="https://github.com/charlysejobe/swipe-fund-web-app" target="_blank" rel="noopener" style="color:var(--accent)"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+
+            <div class="modal-section">
+                <h3>Context & Challenge</h3>
+                <p>This was an intensive front-end challenge. Our <strong>4-person team</strong> had only a few weeks to build a full web app from scratch. We chose <strong>vanilla technologies</strong> (HTML5, CSS3, Vanilla JS) instead of modern frameworks. We wanted to deeply understand core web concepts.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>Project Scope (Teamwork)</h3>
+                <p>We divided the architecture into distinct modules. The app includes:</p>
+                <ul>
+                    <li><strong>Interactive map:</strong> Leaflet API integration to show geolocated data with custom markers.</li>
+                    <li><strong>State Management:</strong> Custom local system using LocalStorage to keep user sessions active.</li>
+                    <li><strong>Accessibility & Quality:</strong> Strict adherence to WCAG accessibility guidelines, W3C validation, and Git version control.</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>My Specific Contributions</h3>
+                <p>I was in charge of the search features, user interfaces, and final documentation:</p>
+                <ul>
+                    <li><strong>Advanced search and filters:</strong> Built the main search engine. Implemented dynamic tags and multi-criteria filters in Vanilla JS.</li>
+                    <li><strong>User Interfaces:</strong> Developed the "Profile" and "My Projects" pages from scratch. Focused on DOM manipulation and responsive design.</li>
+                    <li><strong>Technical Documentation:</strong> Wrote the final technical report. I detailed our architecture, Gitlab commits, accessibility audits, and carbon footprint estimates.</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>Takeaways</h3>
+                <p>Building a full app without frameworks taught me to <strong>code efficiently under pressure</strong>. It also proved my ability to divide complex tasks, integrate my code with teammates, and document our engineering work clearly.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>Technologies</h3>
+                <div class="modal-tech">
+                    <span>HTML5</span><span>CSS3</span><span>Vanilla JavaScript</span><span>Leaflet API</span><span>LocalStorage</span><span>GitLab</span><span>WCAG</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: IoT -->
+    <div class="project-modal" id="modal-iot">
+        <button class="modal-close" aria-label="Close"><i class="fas fa-xmark"></i></button>
+        <div class="modal-banner">
+            <img src="./img-iot.jpg" alt="Raspberry Pi Prototype for the IoT Assistive Device">
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Semester Project — IoT & Accessibility</span>
+            <h2>Assistive Device for the Visually Impaired</h2>
+            <div class="modal-meta">
+                <span><i class="far fa-calendar"></i> Sep 2024 — Jan 2025</span>
+                <span><i class="fas fa-school"></i> EURECOM</span>
+            </div>
+
+            <div class="modal-section">
+                <h3>Context & Challenge</h3>
+                <p>Visually impaired people face major navigation challenges daily. This project aimed to design a <strong>low-cost, portable assistive device</strong>. It provides real-time spatial feedback using haptic and audio indicators.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>How It Works</h3>
+                <ol>
+                    <li><strong>Video acquisition:</strong> A camera module on a Raspberry Pi 4 captures the environment in real time.</li>
+                    <li><strong>Image processing:</strong> Python scripts analyze the video to detect obstacles and estimate distances.</li>
+                    <li><strong>Haptic feedback:</strong> Vibration motors give directional cues. The vibration intensity increases as obstacles get closer.</li>
+                    <li><strong>Audio signals:</strong> Sound alerts warn the user about critical obstacles or provide navigation instructions.</li>
+                </ol>
+            </div>
+
+            <div class="modal-section">
+                <h3>Hardware Used</h3>
+                <ul>
+                    <li>Raspberry Pi 4 (Main processing unit)</li>
+                    <li>Pi Camera Module (Environment capture)</li>
+                    <li>Vibration motors (Haptic feedback)</li>
+                    <li>GPIO wiring</li>
+                </ul>
+            </div>
+            <div class="modal-section">
+                <h3>Technologies</h3>
+                <div class="modal-tech">
+                    <span>Python</span><span>Raspberry Pi 4</span><span>Camera Module</span><span>GPIO</span><span>Haptic Sensors</span><span>Embedded Systems</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: EGM -->
+    <div class="project-modal" id="modal-egm">
+        <button class="modal-close" aria-label="Close"><i class="fas fa-xmark"></i></button>
+        <div class="modal-banner">
+            <img src="./img-egm.png" alt="EGM Internship Visuals">
+        </div>
+        <div class="modal-body">
+            <span class="modal-tag">Data Science Internship</span>
+            <h2>Data Processing & Automation — EGM</h2>
+            <div class="modal-meta">
+                <span><i class="far fa-calendar"></i> Jun 2025 — Jul 2025</span>
+                <span><i class="fas fa-building"></i> EGM, Sophia Antipolis</span>
+                <a href="https://github.com/charlysejobe/egm_internship" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> View on GitHub</a>
+            </div>
+
+            <div class="modal-section">
+                <h3>Context & Challenge</h3>
+                <p>EGM is a sustainable tech company. I worked with data from environmental sensors like the <em>eNose</em> gas detector and the <em>Pixelo</em>. The existing evaluation process was manual and slow. Engineers had to extract data, calculate metrics, and format reports by hand.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>What I Built</h3>
+                <p>To solve this bottleneck, I designed and deployed an automated Python data pipeline:</p>
+                <ul>
+                    <li><strong>Modular data pipeline:</strong> Created a scalable Python architecture to ingest and analyze raw CSV sensor data automatically.</li>
+                    <li><strong>Data processing:</strong> Used the <em>Pandas</em> library to clean, structure, and manipulate datasets efficiently.</li>
+                    <li><strong>Automated visualizations:</strong> Integrated <em>Matplotlib</em> to calculate key metrics (baselines, normalizations, average curves) and generate formatted graphs.</li>
+                    <li><strong>Report generation:</strong> The script automatically compiles and exports visual reports into specific folders. They are instantly ready for the management team.</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h3>Lab Work & Hardware Testing</h3>
+                <p>I handled physical sensors (eNose, Pixelo) and managed the full data chain, from physical measurement to automated analysis.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>Impact</h3>
+                <p>The automation tool reduced manual tasks and improved data quality. It allowed the engineering team to focus on analysis rather than data preparation.</p>
+            </div>
+
+            <div class="modal-section">
+                <h3>Technologies</h3>
+                <div class="modal-tech">
+                    <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Data Automation</span><span>IoT Sensor Data</span><span>Lab Testing</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
