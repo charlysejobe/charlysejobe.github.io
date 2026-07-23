@@ -82,38 +82,6 @@
     window.addEventListener('resize', () => { resizeCanvas(); initParticles(); });
 
     // =====================================================
-    // 2. Typing Animation
-    // =====================================================
-    const typedElement = document.getElementById('typed-text');
-    const words = 'in Cybersecurity'
-    let wordIndex = 0, charIndex = 0, isDeleting = false, speed = 100;
-
-    function typeEffect() {
-        const word = words[wordIndex];
-        if (isDeleting) {
-            typedElement.textContent = word.substring(0, charIndex - 1);
-            charIndex--;
-            speed = 50;
-        } else {
-            typedElement.textContent = word.substring(0, charIndex + 1);
-            charIndex++;
-            speed = 100;
-        }
-
-        if (!isDeleting && charIndex === word.length) {
-            isDeleting = true;
-            speed = 2000;
-        } else if (isDeleting && charIndex === 0) {
-            isDeleting = false;
-            wordIndex = (wordIndex + 1) % words.length;
-            speed = 400;
-        }
-        setTimeout(typeEffect, speed);
-    }
-
-    setTimeout(typeEffect, 1000);
-
-    // =====================================================
     // 3. Navbar
     // =====================================================
     const navbar = document.getElementById('navbar');
